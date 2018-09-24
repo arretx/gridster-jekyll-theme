@@ -3,7 +3,7 @@ layout: page-full
 featimg: 6.jpg
 title: Page
 ---
-## This is a full-width static page
+## This is a full-width static pager
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatibus, assumenda perspiciatis vel eos, molestias nisi cum accusantium commodi amet modi repellendus. Nostrum iure fugiat ducimus quae nesciunt distinctio ullam.
 

@@ -6,7 +6,7 @@
 
     <body class="index">
        <header class="head">
-           {% include header.html %}
+           {% comment %}{% include header.html %}{% endcomment %}
            {% include nav.html %}
         </header>
         {% include search.html %}
@@ -18,7 +18,7 @@
                 </div>
                 {% if page.title %}<h1 class="title">{{ page.title }}</h1>{% endif %}
                 <div class="articles">
-                    {{ content }}
+                    {{ content | toc_generate }}
                 </div>
             </div>
         </div>

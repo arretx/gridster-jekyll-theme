@@ -127,7 +127,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: ['css/**'],
-                        dest: 'jekyllbuild/'
+                        dest: '/home/jongriffith/domains/homeassistant.jongriffith.com/public_html/'
                     },
                 ]
             },
@@ -136,7 +136,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         src: ['js/build/**'],
-                        dest: 'jekyllbuild/'
+                        dest: '/home/jongriffith/domains/homeassistant.jongriffith.com/public_html/'
                     },
                 ]
             }
@@ -144,7 +144,7 @@ module.exports = function (grunt) {
 
         open: {
             build: {
-                path: 'http://localhost:4000',
+                path: 'http://192.168.1.100:4000',
             }
         },
 
@@ -172,7 +172,7 @@ module.exports = function (grunt) {
 
         buildcontrol: {
             options: {
-                dir: 'jekyllbuild',
+                dir: '/home/jongriffith/domains/homeassistant.jongriffith.com/public_html',
                 commit: true,
                 push: true,
                 message: 'Built jekyllbuild from commit %sourceCommit% on branch %sourceBranch%'
@@ -187,7 +187,7 @@ module.exports = function (grunt) {
 
         shell: {
             jekyllServe: {
-                command: "jekyll serve  --no-watch"
+                command: "jekyll serve" // --no-watch
             },
             jekyllBuild: {
                 command: "jekyll build"
